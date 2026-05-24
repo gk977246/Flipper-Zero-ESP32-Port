@@ -19,10 +19,10 @@
 #define BOARD_TARGET      "esp32s3"
 
 /* ---- Hardware Button Pins ---- */
-#define BOARD_PIN_BTN_UP        39
-#define BOARD_PIN_BTN_DOWN      38
-#define BOARD_PIN_BTN_LEFT      41
-#define BOARD_PIN_BTN_RIGHT     40
+#define BOARD_PIN_BTN_UP        41
+#define BOARD_PIN_BTN_DOWN      40
+#define BOARD_PIN_BTN_LEFT      39
+#define BOARD_PIN_BTN_RIGHT     38
 #define BOARD_PIN_BTN_OK        0
 #define BOARD_PIN_BTN_BACK      42
 #define BOARD_PIN_BUTTON_BOOT   0  
