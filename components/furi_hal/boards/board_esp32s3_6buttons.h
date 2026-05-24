@@ -19,14 +19,14 @@
 #define BOARD_TARGET      "esp32s3"
 
 /* ---- Hardware Button Pins ---- */
-#define BOARD_PIN_BTN_UP        41
-#define BOARD_PIN_BTN_DOWN      40
-#define BOARD_PIN_BTN_LEFT      38
-#define BOARD_PIN_BTN_RIGHT     39
+#define BOARD_PIN_BTN_UP        39
+#define BOARD_PIN_BTN_DOWN      38
+#define BOARD_PIN_BTN_LEFT      41
+#define BOARD_PIN_BTN_RIGHT     40
 #define BOARD_PIN_BTN_OK        0
-#define BOARD_PIN_BTN_BACK      4
+#define BOARD_PIN_BTN_BACK      42
 #define BOARD_PIN_BUTTON_BOOT   0  
-#define BOARD_PIN_BATTERY_ADC   2
+#define BOARD_PIN_BATTERY_ADC   6
 
 /* ---- LCD Pins (ILI9341 via SPI) ---- */
 #define BOARD_PIN_LCD_MOSI      17
@@ -34,7 +34,7 @@
 #define BOARD_PIN_LCD_DC        15
 #define BOARD_PIN_LCD_CS        7
 #define BOARD_PIN_LCD_RST       16
-#define BOARD_PIN_LCD_BL        6
+#define BOARD_PIN_LCD_BL        1
 
 /* ---- LCD Display Configuration ---- */
 #define BOARD_LCD_H_RES         320     /* Native width after swap_xy */
@@ -44,8 +44,8 @@
 #define BOARD_LCD_CMD_BITS      8
 #define BOARD_LCD_PARAM_BITS    8
 #define BOARD_LCD_SWAP_XY       true
-#define BOARD_LCD_MIRROR_X      false
-#define BOARD_LCD_MIRROR_Y      false
+#define BOARD_LCD_MIRROR_X      true
+#define BOARD_LCD_MIRROR_Y      true
 #define BOARD_LCD_INVERT_COLOR  false   /* ILI9341 does not need inversion */
 #define BOARD_LCD_GAP_X         0
 #define BOARD_LCD_GAP_Y         0
@@ -78,7 +78,7 @@
 #define BOARD_PIN_CC1101_MISO   11
 #define BOARD_PIN_CC1101_MOSI   12
 #define BOARD_PIN_CC1101_GDO0   9
-#define BOARD_PIN_CC1101_GDO2   10
+#define BOARD_PIN_CC1101_GDO2   UINT16_MAX
 #define BOARD_CC1101_SPI_HOST   SPI3_HOST
 #define BOARD_CC1101_SPI_SHARED 0
 
@@ -96,10 +96,10 @@
 
 /* ---- IR ---- */
 #define BOARD_PIN_IR_TX         5  
-#define BOARD_PIN_IR_RX         UINT16_MAX  
+#define BOARD_PIN_IR_RX         4  
 
 /* ---- NFC / PN532 (via I2C) ---- */
-#define BOARD_PIN_NFC_SCL       42
+#define BOARD_PIN_NFC_SCL       48
 #define BOARD_PIN_NFC_SDA       47
 #define BOARD_PIN_NFC_IRQ       UINT16_MAX
 #define BOARD_PIN_NFC_RST       UINT16_MAX
@@ -111,7 +111,7 @@
 #define BOARD_PIN_SPEAKER_DOUT  UINT16_MAX
 
 /* ---- WS2812 RGB LED ---- */
-#define BOARD_PIN_WS2812_DATA   48
+#define BOARD_PIN_WS2812_DATA   45
 #define BOARD_WS2812_LED_COUNT  1
 
 /* ---- Microphone ---- */
@@ -120,7 +120,7 @@
 
 /* ---- Qwiic / External I2C ---- */
 #define BOARD_PIN_QWIIC_SDA     47
-#define BOARD_PIN_QWIIC_SCL     42
+#define BOARD_PIN_QWIIC_SCL     48
 
 /* ---- Features ---- */
 #define BOARD_HAS_TOUCH         0
