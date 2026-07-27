@@ -19,10 +19,10 @@
 #define BOARD_TARGET      "esp32s3"
 
 /* ---- Hardware Button Pins ---- */
-#define BOARD_PIN_BTN_UP        39
-#define BOARD_PIN_BTN_DOWN      38
-#define BOARD_PIN_BTN_LEFT      41
-#define BOARD_PIN_BTN_RIGHT     40
+#define BOARD_PIN_BTN_UP        41
+#define BOARD_PIN_BTN_DOWN      40
+#define BOARD_PIN_BTN_LEFT      39
+#define BOARD_PIN_BTN_RIGHT     38
 #define BOARD_PIN_BTN_OK        0
 #define BOARD_PIN_BTN_BACK      42
 #define BOARD_PIN_BUTTON_BOOT   0  
@@ -77,7 +77,7 @@
 #define BOARD_PIN_CC1101_CSN    46
 #define BOARD_PIN_CC1101_MISO   11
 #define BOARD_PIN_CC1101_MOSI   12
-#define BOARD_PIN_CC1101_GDO0   10
+#define BOARD_PIN_CC1101_GDO0   9
 #define BOARD_PIN_CC1101_GDO2   UINT16_MAX
 #define BOARD_CC1101_SPI_HOST   SPI3_HOST
 #define BOARD_CC1101_SPI_SHARED 0
