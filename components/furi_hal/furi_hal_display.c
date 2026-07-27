@@ -225,7 +225,7 @@ void furi_hal_display_init(void) {
     vTaskDelay(pdMS_TO_TICKS(150));
 
     ESP_ERROR_CHECK(esp_lcd_new_panel_ili9341(io_handle, &panel_config, &panel_handle));
-
+    /*ESP_ERROR_CHECK(esp_lcd_new_panel_st7789(io_handle, &panel_config, &panel_handle)); */
     
     /* Reset and initialize (the esp_lcd driver reset is redundant now but harmless) */
     ESP_ERROR_CHECK(esp_lcd_panel_reset(panel_handle));
